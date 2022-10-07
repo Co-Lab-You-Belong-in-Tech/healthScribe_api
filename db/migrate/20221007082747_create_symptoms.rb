@@ -4,7 +4,7 @@ class CreateSymptoms < ActiveRecord::Migration[7.0]
       t.string :name
       t.string :description
       t.string :treatment
-
+      t.references :user, null: false, foreign_key: true
       t.timestamps
     end
   end
