@@ -2,10 +2,10 @@
 
 one:
   name: MyString
-  description: MyText
-  treatment: MyText
+  description: MyString
+  treatment: MyString
 
 two:
   name: MyString
-  description: MyText
-  treatment: MyText
+  description: MyString
+  treatment: MyString

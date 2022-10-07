@@ -2,8 +2,8 @@ class CreateSymptoms < ActiveRecord::Migration[7.0]
   def change
     create_table :symptoms do |t|
       t.string :name
-      t.text :description
-      t.text :treatment
+      t.string :description
+      t.string :treatment
 
       t.timestamps
     end
