@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2022-10-08 15:39:46
+  time: 2022-10-08 15:39:46
+  comment: MyText
+  food_type: MyString
+
+two:
+  date: 2022-10-08 15:39:46
+  time: 2022-10-08 15:39:46
+  comment: MyText
+  food_type: MyString

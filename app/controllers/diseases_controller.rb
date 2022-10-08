@@ -1,5 +1,5 @@
 class DiseasesController < ApplicationController
-  before_action :set_disease, only: %i[ show update destroy ]
+  before_action :set_disease, only: %i[show update destroy]
 
   # GET /diseases
   def index
@@ -39,13 +39,14 @@ class DiseasesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_disease
-      @disease = Disease.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def disease_params
-      params.require(:disease).permit(:name, :description, :treatment)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_disease
+    @disease = Disease.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def disease_params
+    params.require(:disease).permit(:name, :description, :treatment)
+  end
 end

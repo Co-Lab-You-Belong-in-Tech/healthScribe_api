@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :medications
+  resources :drinks
+  resources :foods
   devise_for :users
   resources :users do
     resources :diseases

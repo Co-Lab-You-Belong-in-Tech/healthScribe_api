@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class DiseaseTest < ActiveSupport::TestCase
+class DrinkTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

@@ -1,5 +1,5 @@
 class SymptomsController < ApplicationController
-  before_action :set_symptom, only: %i[ show update destroy ]
+  before_action :set_symptom, only: %i[show update destroy]
 
   # GET /symptoms
   def index
@@ -39,13 +39,14 @@ class SymptomsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_symptom
-      @symptom = Symptom.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def symptom_params
-      params.require(:symptom).permit(:name, :description, :treatment)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_symptom
+    @symptom = Symptom.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def symptom_params
+    params.require(:symptom).permit(:name, :description, :treatment)
+  end
 end
