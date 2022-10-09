@@ -5,7 +5,7 @@ class CreateDrinks < ActiveRecord::Migration[7.0]
       t.time :time
       t.text :comment
       t.string :drink_type
-
+      t.references :user, null: false, foreign_key: true
       t.timestamps
     end
   end
