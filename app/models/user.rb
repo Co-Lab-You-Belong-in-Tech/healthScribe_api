@@ -4,6 +4,9 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
   validates :first_name, :last_name, presence: true, length: { maximum: 50 }
-  has_many :diseases, dependent: :destroy
   has_many :symptoms, dependent: :destroy
+  has_many :moods, dependent: :destroy
+  has_many :medications, dependent: :destroy
+  has_many :foods, dependent: :destroy
+  has_many :drinks, dependent: :destroy
 end
